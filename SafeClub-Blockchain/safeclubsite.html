@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>SafeClub Interface</title>
+  <style>
+    /* Reset léger */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    h1 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 0.2em;
+    }
+    div.balance {
+      background: #fff;
+      max-width: 400px;
+      margin: 0 auto 30px auto;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      font-size: 1.2em;
+      font-weight: 600;
+      color: #2980b9;
+      text-align: center;
+    }
+    h2 {
+      color: #34495e;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    ul#proposals {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0;
+      list-style: none;
+    }
+    ul#proposals li {
+      background: white;
+      margin-bottom: 15px;
+      padding: 15px 20px;
+      border-left: 5px solid #2980b9;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    ul#proposals li:hover {
+      box-shadow: 0 4px 10px rgba(41, 128, 185, 0.3);
+    }
+    ul#proposals li strong {
+      color: #2980b9;
+    }
+    ul#proposals li br {
+      margin-bottom: 5px;
+    }
+    /* Statut Exécutée */
+    .executed-yes {
+      color: green;
+      font-weight: 700;
+    }
+    .executed-no {
+      color: #e74c3c;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <h1>SafeClub DAO</h1>
+
+  <div class="balance">
+    Solde du contrat : <span id="balance">Chargement...</span> ETH
+  </div>
+
+  <h2>Propositions</h2>
+  <ul id="proposals"></ul>
+
+  <script type="module">
+    console.log("Script chargé");
+    import { ethers } from "https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.esm.min.js";
+
+    window.onload = async () => {
+      if (!window.ethereum) {
+        alert("MetaMask est requis !");
+        return;
+      }
+
+      try {
+        await ethereum.request({ method: "eth_requestAccounts" });
+
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+
+        const contractAddress = "0xC16d3c6bb2aE48dA30CE88C7f0eeA5f4fA0f31AE";
+
+        const contractABI = [
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "_member",
+                "type": "address"
+              }
+            ],
+            "name": "addMember",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address payable",
+                "name": "_to",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "_amountWei",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "_description",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "_durationSeconds",
+                "type": "uint256"
+              }
+            ],
+            "name": "createProposal",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "deposit",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "from",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              }
+            ],
+            "name": "Deposit",
+            "type": "event"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+              }
+            ],
+            "name": "executeProposal",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "member",
+                "type": "address"
+              }
+            ],
+            "name": "MemberAdded",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "member",
+                "type": "address"
+              }
+            ],
+            "name": "MemberRemoved",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+              }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "proposer",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+              }
+            ],
+            "name": "ProposalCreated",
+            "type": "event"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": false,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "executor",
+                "type": "address"
+              }
+            ],
+            "name": "ProposalExecuted",
+            "type": "event"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "_member",
+                "type": "address"
+              }
+            ],
+            "name": "removeMember",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "renounceOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "newOwner",
+                "type": "address"
+              }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "_support",
+                "type": "bool"
+              }
+            ],
+            "name": "vote",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+          },
+          {
+            "anonymous": false,
+            "inputs": [
+              {
+                "indexed": true,
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "indexed": true,
+                "internalType": "address",
+                "name": "voter",
+                "type": "address"
+              },
+              {
+                "indexed": false,
+                "internalType": "bool",
+                "name": "support",
+                "type": "bool"
+              }
+            ],
+            "name": "Voted",
+            "type": "event"
+          },
+          {
+            "stateMutability": "payable",
+            "type": "receive"
+          },
+          {
+            "inputs": [],
+            "name": "getContractBalance",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "hasVoted",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "_proposalId",
+                "type": "uint256"
+              }
+            ],
+            "name": "isAccepted",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "memberCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "name": "members",
+            "outputs": [
+              {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+              {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "proposalCount",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [
+              {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+              }
+            ],
+            "name": "proposals",
+            "outputs": [
+              {
+                "internalType": "uint256",
+                "name": "id",
+                "type": "uint256"
+              },
+              {
+                "internalType": "address payable",
+                "name": "to",
+                "type": "address"
+              },
+              {
+                "internalType": "uint256",
+                "name": "amount",
+                "type": "uint256"
+              },
+              {
+                "internalType": "string",
+                "name": "description",
+                "type": "string"
+              },
+              {
+                "internalType": "uint256",
+                "name": "deadline",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "votesFor",
+                "type": "uint256"
+              },
+              {
+                "internalType": "uint256",
+                "name": "votesAgainst",
+                "type": "uint256"
+              },
+              {
+                "internalType": "bool",
+                "name": "executed",
+                "type": "bool"
+              },
+              {
+                "internalType": "uint256",
+                "name": "createdAt",
+                "type": "uint256"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          },
+          {
+            "inputs": [],
+            "name": "quorumPercent",
+            "outputs": [
+              {
+                "internalType": "uint8",
+                "name": "",
+                "type": "uint8"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ];
+
+        const contract = new ethers.Contract(contractAddress, contractABI, signer);
+
+        // Solde du contrat
+        const balanceWei = await provider.getBalance(contractAddress);
+        const balanceEth = ethers.utils.formatEther(balanceWei);
+        document.getElementById("balance").innerText = balanceEth;
+
+        // Nombre de propositions
+        const proposalCount = await contract.proposalCount();
+        const proposalsUl = document.getElementById("proposals");
+        proposalsUl.innerHTML = "";
+
+        for (let id = 1; id <= proposalCount; id++) {
+          const proposal = await contract.proposals(id);
+
+          const deadlineDate = new Date(proposal.deadline.toNumber() * 1000);
+          const createdAtDate = new Date(proposal.createdAt.toNumber() * 1000);
+          const amountEth = ethers.utils.formatEther(proposal.amount);
+
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <strong>#${proposal.id}</strong> - ${proposal.description} <br />
+            <strong>Destinataire :</strong> ${proposal.to} <br />
+            <strong>Montant :</strong> ${amountEth} ETH <br />
+            <strong>Créée le :</strong> ${createdAtDate.toLocaleString()} <br />
+            <strong>Deadline :</strong> ${deadlineDate.toLocaleString()} <br />
+            <strong>Votes Pour :</strong> ${proposal.votesFor.toString()} <br />
+            <strong>Votes Contre :</strong> ${proposal.votesAgainst.toString()} <br />
+            <strong>Exécutée :</strong> <span class="${proposal.executed ? 'executed-yes' : 'executed-no'}">${proposal.executed ? 'Oui' : 'Non'}</span>
+          `;
+          proposalsUl.appendChild(li);
+        }
+
+      } catch (error) {
+        console.error(error);
+        alert("Erreur : " + error.message);
+      }
+    };
+  </script>
+</body>
+</html>
+
