@@ -1,0 +1,249 @@
+Date,Heure,Type Attaque,IP Source,Détails
+2026-02-08,01:55:41,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:53:59,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:53:56,SYN_FLOOD,192.168.1.249,Attaque détectée et IP bloquée
+2026-02-08,01:53:56,SYN_FLOOD,192.168.1.249,IP bloquée automatiquement
+2026-02-08,01:53:56,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:53:55,SYN_FLOOD,192.168.1.148,Attaque détectée et IP bloquée
+2026-02-08,01:53:55,SYN_FLOOD,192.168.1.148,IP bloquée automatiquement
+2026-02-08,01:53:55,SYN_FLOOD,192.168.1.233,Attaque détectée et IP bloquée
+2026-02-08,01:53:55,SYN_FLOOD,192.168.1.233,IP bloquée automatiquement
+2026-02-08,01:53:55,SYN_FLOOD,192.168.1.61,Attaque détectée et IP bloquée
+2026-02-08,01:53:55,SYN_FLOOD,192.168.1.61,IP bloquée automatiquement
+2026-02-08,01:53:54,SYN_FLOOD,192.168.1.74,Attaque détectée et IP bloquée
+2026-02-08,01:53:54,SYN_FLOOD,192.168.1.74,IP bloquée automatiquement
+2026-02-08,01:53:54,SYN_FLOOD,192.168.1.119,Attaque détectée et IP bloquée
+2026-02-08,01:53:54,SYN_FLOOD,192.168.1.119,IP bloquée automatiquement
+2026-02-08,01:53:54,SYN_FLOOD,192.168.1.219,Attaque détectée et IP bloquée
+2026-02-08,01:53:54,SYN_FLOOD,192.168.1.219,IP bloquée automatiquement
+2026-02-08,01:53:53,SYN_FLOOD,192.168.1.32,Attaque détectée et IP bloquée
+2026-02-08,01:53:53,SYN_FLOOD,192.168.1.32,IP bloquée automatiquement
+2026-02-08,01:53:53,SYN_FLOOD,192.168.1.117,Attaque détectée et IP bloquée
+2026-02-08,01:53:53,SYN_FLOOD,192.168.1.117,IP bloquée automatiquement
+2026-02-08,01:53:52,SYN_FLOOD,192.168.1.43,Attaque détectée et IP bloquée
+2026-02-08,01:53:52,SYN_FLOOD,192.168.1.43,IP bloquée automatiquement
+2026-02-08,01:53:52,SYN_FLOOD,192.168.1.187,Attaque détectée et IP bloquée
+2026-02-08,01:53:52,SYN_FLOOD,192.168.1.187,IP bloquée automatiquement
+2026-02-08,01:53:51,SYN_FLOOD,192.168.1.93,Attaque détectée et IP bloquée
+2026-02-08,01:53:51,SYN_FLOOD,192.168.1.93,IP bloquée automatiquement
+2026-02-08,01:53:51,SYN_FLOOD,192.168.1.206,Attaque détectée et IP bloquée
+2026-02-08,01:53:51,SYN_FLOOD,192.168.1.206,IP bloquée automatiquement
+2026-02-08,01:53:50,SYN_FLOOD,192.168.1.165,Attaque détectée et IP bloquée
+2026-02-08,01:53:50,SYN_FLOOD,192.168.1.165,IP bloquée automatiquement
+2026-02-08,01:53:50,SYN_FLOOD,192.168.1.243,Attaque détectée et IP bloquée
+2026-02-08,01:53:50,SYN_FLOOD,192.168.1.243,IP bloquée automatiquement
+2026-02-08,01:53:50,SYN_FLOOD,192.168.1.242,Attaque détectée et IP bloquée
+2026-02-08,01:53:50,SYN_FLOOD,192.168.1.242,IP bloquée automatiquement
+2026-02-08,01:53:49,SYN_FLOOD,192.168.1.136,Attaque détectée et IP bloquée
+2026-02-08,01:53:49,SYN_FLOOD,192.168.1.136,IP bloquée automatiquement
+2026-02-08,01:53:49,SYN_FLOOD,192.168.1.59,Attaque détectée et IP bloquée
+2026-02-08,01:53:49,SYN_FLOOD,192.168.1.59,IP bloquée automatiquement
+2026-02-08,01:53:37,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:53:25,SYN_FLOOD,192.168.1.85,Attaque détectée et IP bloquée
+2026-02-08,01:53:25,SYN_FLOOD,192.168.1.85,IP bloquée automatiquement
+2026-02-08,01:53:25,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:53:24,SYN_FLOOD,192.168.1.55,Attaque détectée et IP bloquée
+2026-02-08,01:53:24,SYN_FLOOD,192.168.1.55,IP bloquée automatiquement
+2026-02-08,01:53:24,SYN_FLOOD,192.168.1.3,Attaque détectée et IP bloquée
+2026-02-08,01:53:24,SYN_FLOOD,192.168.1.3,IP bloquée automatiquement
+2026-02-08,01:53:23,SYN_FLOOD,192.168.1.245,Attaque détectée et IP bloquée
+2026-02-08,01:53:23,SYN_FLOOD,192.168.1.245,IP bloquée automatiquement
+2026-02-08,01:53:23,SYN_FLOOD,192.168.1.125,Attaque détectée et IP bloquée
+2026-02-08,01:53:23,SYN_FLOOD,192.168.1.125,IP bloquée automatiquement
+2026-02-08,01:53:23,SYN_FLOOD,192.168.1.234,Attaque détectée et IP bloquée
+2026-02-08,01:53:23,SYN_FLOOD,192.168.1.234,IP bloquée automatiquement
+2026-02-08,01:53:22,SYN_FLOOD,192.168.1.252,Attaque détectée et IP bloquée
+2026-02-08,01:53:22,SYN_FLOOD,192.168.1.252,IP bloquée automatiquement
+2026-02-08,01:53:22,SYN_FLOOD,192.168.1.8,Attaque détectée et IP bloquée
+2026-02-08,01:53:22,SYN_FLOOD,192.168.1.8,IP bloquée automatiquement
+2026-02-08,01:53:22,SYN_FLOOD,192.168.1.11,Attaque détectée et IP bloquée
+2026-02-08,01:53:22,SYN_FLOOD,192.168.1.11,IP bloquée automatiquement
+2026-02-08,01:53:21,SYN_FLOOD,192.168.1.170,Attaque détectée et IP bloquée
+2026-02-08,01:53:21,SYN_FLOOD,192.168.1.170,IP bloquée automatiquement
+2026-02-08,01:53:21,SYN_FLOOD,192.168.1.198,Attaque détectée et IP bloquée
+2026-02-08,01:53:21,SYN_FLOOD,192.168.1.198,IP bloquée automatiquement
+2026-02-08,01:53:21,SYN_FLOOD,192.168.1.208,Attaque détectée et IP bloquée
+2026-02-08,01:53:21,SYN_FLOOD,192.168.1.208,IP bloquée automatiquement
+2026-02-08,01:53:20,SYN_FLOOD,192.168.1.118,Attaque détectée et IP bloquée
+2026-02-08,01:53:20,SYN_FLOOD,192.168.1.118,IP bloquée automatiquement
+2026-02-08,01:53:20,SYN_FLOOD,192.168.1.112,Attaque détectée et IP bloquée
+2026-02-08,01:53:20,SYN_FLOOD,192.168.1.112,IP bloquée automatiquement
+2026-02-08,01:53:20,SYN_FLOOD,192.168.1.123,Attaque détectée et IP bloquée
+2026-02-08,01:53:20,SYN_FLOOD,192.168.1.123,IP bloquée automatiquement
+2026-02-08,01:53:19,SYN_FLOOD,192.168.1.42,Attaque détectée et IP bloquée
+2026-02-08,01:53:19,SYN_FLOOD,192.168.1.42,IP bloquée automatiquement
+2026-02-08,01:53:19,SYN_FLOOD,192.168.1.140,Attaque détectée et IP bloquée
+2026-02-08,01:53:19,SYN_FLOOD,192.168.1.140,IP bloquée automatiquement
+2026-02-08,01:53:18,SYN_FLOOD,192.168.1.197,Attaque détectée et IP bloquée
+2026-02-08,01:53:18,SYN_FLOOD,192.168.1.197,IP bloquée automatiquement
+2026-02-08,01:53:18,SYN_FLOOD,192.168.1.232,Attaque détectée et IP bloquée
+2026-02-08,01:53:18,SYN_FLOOD,192.168.1.232,IP bloquée automatiquement
+2026-02-08,01:53:18,SYN_FLOOD,192.168.1.231,Attaque détectée et IP bloquée
+2026-02-08,01:53:18,SYN_FLOOD,192.168.1.231,IP bloquée automatiquement
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.224,Attaque détectée et IP bloquée
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.224,IP bloquée automatiquement
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.49,Attaque détectée et IP bloquée
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.49,IP bloquée automatiquement
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.247,Attaque détectée et IP bloquée
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.247,IP bloquée automatiquement
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.226,Attaque détectée et IP bloquée
+2026-02-08,01:53:17,SYN_FLOOD,192.168.1.226,IP bloquée automatiquement
+2026-02-08,01:53:16,SYN_FLOOD,192.168.1.194,Attaque détectée et IP bloquée
+2026-02-08,01:53:16,SYN_FLOOD,192.168.1.194,IP bloquée automatiquement
+2026-02-08,01:53:16,SYN_FLOOD,192.168.1.80,Attaque détectée et IP bloquée
+2026-02-08,01:53:16,SYN_FLOOD,192.168.1.80,IP bloquée automatiquement
+2026-02-08,01:53:16,SYN_FLOOD,192.168.1.222,Attaque détectée et IP bloquée
+2026-02-08,01:53:16,SYN_FLOOD,192.168.1.222,IP bloquée automatiquement
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.62,Attaque détectée et IP bloquée
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.62,IP bloquée automatiquement
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.147,Attaque détectée et IP bloquée
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.147,IP bloquée automatiquement
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.84,Attaque détectée et IP bloquée
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.84,IP bloquée automatiquement
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.191,Attaque détectée et IP bloquée
+2026-02-08,01:53:15,SYN_FLOOD,192.168.1.191,IP bloquée automatiquement
+2026-02-08,01:53:14,SYN_FLOOD,192.168.1.152,Attaque détectée et IP bloquée
+2026-02-08,01:53:14,SYN_FLOOD,192.168.1.152,IP bloquée automatiquement
+2026-02-08,01:53:02,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:52:19,UDP_FLOOD,192.168.1.203,Attaque détectée et IP bloquée
+2026-02-08,01:52:19,UDP_FLOOD,192.168.1.203,IP bloquée automatiquement
+2026-02-08,01:52:18,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:52:18,UDP_FLOOD,192.168.1.18,Attaque détectée et IP bloquée
+2026-02-08,01:52:18,UDP_FLOOD,192.168.1.18,IP bloquée automatiquement
+2026-02-08,01:52:18,UDP_FLOOD,192.168.1.215,Attaque détectée et IP bloquée
+2026-02-08,01:52:18,UDP_FLOOD,192.168.1.215,IP bloquée automatiquement
+2026-02-08,01:52:17,UDP_FLOOD,192.168.1.91,Attaque détectée et IP bloquée
+2026-02-08,01:52:17,UDP_FLOOD,192.168.1.91,IP bloquée automatiquement
+2026-02-08,01:52:17,UDP_FLOOD,192.168.1.175,Attaque détectée et IP bloquée
+2026-02-08,01:52:17,UDP_FLOOD,192.168.1.175,IP bloquée automatiquement
+2026-02-08,01:52:17,UDP_FLOOD,192.168.1.171,Attaque détectée et IP bloquée
+2026-02-08,01:52:17,UDP_FLOOD,192.168.1.171,IP bloquée automatiquement
+2026-02-08,01:52:16,UDP_FLOOD,192.168.1.60,Attaque détectée et IP bloquée
+2026-02-08,01:52:16,UDP_FLOOD,192.168.1.60,IP bloquée automatiquement
+2026-02-08,01:52:16,UDP_FLOOD,192.168.1.69,Attaque détectée et IP bloquée
+2026-02-08,01:52:16,UDP_FLOOD,192.168.1.69,IP bloquée automatiquement
+2026-02-08,01:52:15,UDP_FLOOD,192.168.1.52,Attaque détectée et IP bloquée
+2026-02-08,01:52:15,UDP_FLOOD,192.168.1.52,IP bloquée automatiquement
+2026-02-08,01:52:15,UDP_FLOOD,192.168.1.38,Attaque détectée et IP bloquée
+2026-02-08,01:52:15,UDP_FLOOD,192.168.1.38,IP bloquée automatiquement
+2026-02-08,01:52:14,UDP_FLOOD,192.168.1.120,Attaque détectée et IP bloquée
+2026-02-08,01:52:14,UDP_FLOOD,192.168.1.120,IP bloquée automatiquement
+2026-02-08,01:52:14,UDP_FLOOD,192.168.1.223,Attaque détectée et IP bloquée
+2026-02-08,01:52:14,UDP_FLOOD,192.168.1.223,IP bloquée automatiquement
+2026-02-08,01:52:14,UDP_FLOOD,192.168.1.98,Attaque détectée et IP bloquée
+2026-02-08,01:52:14,UDP_FLOOD,192.168.1.98,IP bloquée automatiquement
+2026-02-08,01:52:13,UDP_FLOOD,192.168.1.103,Attaque détectée et IP bloquée
+2026-02-08,01:52:13,UDP_FLOOD,192.168.1.103,IP bloquée automatiquement
+2026-02-08,01:52:13,UDP_FLOOD,192.168.1.72,Attaque détectée et IP bloquée
+2026-02-08,01:52:13,UDP_FLOOD,192.168.1.72,IP bloquée automatiquement
+2026-02-08,01:52:13,UDP_FLOOD,192.168.1.181,Attaque détectée et IP bloquée
+2026-02-08,01:52:12,UDP_FLOOD,192.168.1.181,IP bloquée automatiquement
+2026-02-08,01:52:12,UDP_FLOOD,192.168.1.162,Attaque détectée et IP bloquée
+2026-02-08,01:52:12,UDP_FLOOD,192.168.1.162,IP bloquée automatiquement
+2026-02-08,01:52:12,UDP_FLOOD,192.168.1.229,Attaque détectée et IP bloquée
+2026-02-08,01:52:12,UDP_FLOOD,192.168.1.229,IP bloquée automatiquement
+2026-02-08,01:52:11,UDP_FLOOD,192.168.1.17,Attaque détectée et IP bloquée
+2026-02-08,01:52:11,UDP_FLOOD,192.168.1.17,IP bloquée automatiquement
+2026-02-08,01:52:11,UDP_FLOOD,192.168.1.70,Attaque détectée et IP bloquée
+2026-02-08,01:52:11,UDP_FLOOD,192.168.1.70,IP bloquée automatiquement
+2026-02-08,01:52:11,UDP_FLOOD,192.168.1.99,Attaque détectée et IP bloquée
+2026-02-08,01:52:11,UDP_FLOOD,192.168.1.99,IP bloquée automatiquement
+2026-02-08,01:52:10,UDP_FLOOD,192.168.1.217,Attaque détectée et IP bloquée
+2026-02-08,01:52:10,UDP_FLOOD,192.168.1.217,IP bloquée automatiquement
+2026-02-08,01:52:10,UDP_FLOOD,192.168.1.128,Attaque détectée et IP bloquée
+2026-02-08,01:52:10,UDP_FLOOD,192.168.1.128,IP bloquée automatiquement
+2026-02-08,01:52:09,UDP_FLOOD,192.168.1.23,Attaque détectée et IP bloquée
+2026-02-08,01:52:09,UDP_FLOOD,192.168.1.23,IP bloquée automatiquement
+2026-02-08,01:52:09,UDP_FLOOD,192.168.1.218,Attaque détectée et IP bloquée
+2026-02-08,01:52:09,UDP_FLOOD,192.168.1.218,IP bloquée automatiquement
+2026-02-08,01:52:09,UDP_FLOOD,192.168.1.160,Attaque détectée et IP bloquée
+2026-02-08,01:52:09,UDP_FLOOD,192.168.1.160,IP bloquée automatiquement
+2026-02-08,01:52:08,UDP_FLOOD,192.168.1.200,Attaque détectée et IP bloquée
+2026-02-08,01:52:08,UDP_FLOOD,192.168.1.200,IP bloquée automatiquement
+2026-02-08,01:52:08,UDP_FLOOD,192.168.1.139,Attaque détectée et IP bloquée
+2026-02-08,01:52:08,UDP_FLOOD,192.168.1.139,IP bloquée automatiquement
+2026-02-08,01:52:08,UDP_FLOOD,192.168.1.211,Attaque détectée et IP bloquée
+2026-02-08,01:52:08,UDP_FLOOD,192.168.1.211,IP bloquée automatiquement
+2026-02-08,01:52:07,UDP_FLOOD,192.168.1.22,Attaque détectée et IP bloquée
+2026-02-08,01:52:07,UDP_FLOOD,192.168.1.22,IP bloquée automatiquement
+2026-02-08,01:52:07,UDP_FLOOD,192.168.1.228,Attaque détectée et IP bloquée
+2026-02-08,01:52:07,UDP_FLOOD,192.168.1.228,IP bloquée automatiquement
+2026-02-08,01:52:06,UDP_FLOOD,192.168.1.164,Attaque détectée et IP bloquée
+2026-02-08,01:52:06,UDP_FLOOD,192.168.1.164,IP bloquée automatiquement
+2026-02-08,01:52:06,UDP_FLOOD,192.168.1.31,Attaque détectée et IP bloquée
+2026-02-08,01:52:06,UDP_FLOOD,192.168.1.31,IP bloquée automatiquement
+2026-02-08,01:52:06,UDP_FLOOD,192.168.1.66,Attaque détectée et IP bloquée
+2026-02-08,01:52:06,UDP_FLOOD,192.168.1.66,IP bloquée automatiquement
+2026-02-08,01:52:05,UDP_FLOOD,192.168.1.90,Attaque détectée et IP bloquée
+2026-02-08,01:52:05,UDP_FLOOD,192.168.1.90,IP bloquée automatiquement
+2026-02-08,01:52:05,UDP_FLOOD,192.168.1.150,Attaque détectée et IP bloquée
+2026-02-08,01:52:05,UDP_FLOOD,192.168.1.150,IP bloquée automatiquement
+2026-02-08,01:52:05,UDP_FLOOD,192.168.1.88,Attaque détectée et IP bloquée
+2026-02-08,01:52:05,UDP_FLOOD,192.168.1.88,IP bloquée automatiquement
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.57,Attaque détectée et IP bloquée
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.57,IP bloquée automatiquement
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.86,Attaque détectée et IP bloquée
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.86,IP bloquée automatiquement
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.82,Attaque détectée et IP bloquée
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.82,IP bloquée automatiquement
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.133,Attaque détectée et IP bloquée
+2026-02-08,01:52:04,UDP_FLOOD,192.168.1.133,IP bloquée automatiquement
+2026-02-08,01:52:03,UDP_FLOOD,192.168.1.47,Attaque détectée et IP bloquée
+2026-02-08,01:52:03,UDP_FLOOD,192.168.1.47,IP bloquée automatiquement
+2026-02-08,01:52:03,UDP_FLOOD,192.168.1.176,Attaque détectée et IP bloquée
+2026-02-08,01:52:03,UDP_FLOOD,192.168.1.176,IP bloquée automatiquement
+2026-02-08,01:52:03,UDP_FLOOD,192.168.1.172,Attaque détectée et IP bloquée
+2026-02-08,01:52:03,UDP_FLOOD,192.168.1.172,IP bloquée automatiquement
+2026-02-08,01:52:02,UDP_FLOOD,192.168.1.71,Attaque détectée et IP bloquée
+2026-02-08,01:52:02,UDP_FLOOD,192.168.1.71,IP bloquée automatiquement
+2026-02-08,01:52:02,UDP_FLOOD,192.168.1.10,Attaque détectée et IP bloquée
+2026-02-08,01:52:02,UDP_FLOOD,192.168.1.10,IP bloquée automatiquement
+2026-02-08,01:52:02,UDP_FLOOD,192.168.1.178,Attaque détectée et IP bloquée
+2026-02-08,01:52:02,UDP_FLOOD,192.168.1.178,IP bloquée automatiquement
+2026-02-08,01:52:01,UDP_FLOOD,192.168.1.225,Attaque détectée et IP bloquée
+2026-02-08,01:52:01,UDP_FLOOD,192.168.1.225,IP bloquée automatiquement
+2026-02-08,01:52:01,UDP_FLOOD,192.168.1.122,Attaque détectée et IP bloquée
+2026-02-08,01:52:01,UDP_FLOOD,192.168.1.122,IP bloquée automatiquement
+2026-02-08,01:52:01,UDP_FLOOD,192.168.1.161,Attaque détectée et IP bloquée
+2026-02-08,01:52:01,UDP_FLOOD,192.168.1.161,IP bloquée automatiquement
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.2,Attaque détectée et IP bloquée
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.2,IP bloquée automatiquement
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.185,Attaque détectée et IP bloquée
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.185,IP bloquée automatiquement
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.34,Attaque détectée et IP bloquée
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.34,IP bloquée automatiquement
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.214,Attaque détectée et IP bloquée
+2026-02-08,01:52:00,UDP_FLOOD,192.168.1.214,IP bloquée automatiquement
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.101,Attaque détectée et IP bloquée
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.101,IP bloquée automatiquement
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.142,Attaque détectée et IP bloquée
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.142,IP bloquée automatiquement
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.253,Attaque détectée et IP bloquée
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.253,IP bloquée automatiquement
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.246,Attaque détectée et IP bloquée
+2026-02-08,01:51:59,UDP_FLOOD,192.168.1.246,IP bloquée automatiquement
+2026-02-08,01:51:41,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:51:39,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:49:33,UDP_FLOOD,192.168.1.1,Attaque détectée et IP bloquée
+2026-02-08,01:49:33,UDP_FLOOD,192.168.1.1,IP bloquée automatiquement
+2026-02-08,01:49:27,MANUAL,192.168.1.7,IP bloquée automatiquement
+2026-02-08,01:49:15,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:48:59,SYSTEM,0.0.0.0,Système IDPS initialisé
+2026-02-08,01:47:15,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:46:58,ARP_SPOOFING,192.168.1.1,Attaque détectée et IP bloquée
+2026-02-08,01:46:58,ARP_SPOOFING,192.168.1.1,IP bloquée automatiquement
+2026-02-08,01:46:50,UDP_FLOOD,192.168.1.7,Attaque détectée et IP bloquée
+2026-02-08,01:46:50,UDP_FLOOD,192.168.1.7,IP bloquée automatiquement
+2026-02-08,01:46:41,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:46:19,SYSTEM,0.0.0.0,Système IDPS initialisé
+2026-02-08,01:39:52,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-08,01:39:14,ARP_SPOOFING,192.168.1.7,Attaque détectée et IP bloquée
+2026-02-08,01:39:14,ARP_SPOOFING,192.168.1.7,IP bloquée automatiquement
+2026-02-08,01:39:00,UNBLOCK,192.168.1.7,IP débloquée manuellement (était bloquée pour ARP_SPOOFING)
+2026-02-08,01:38:20,ARP_SPOOFING,192.168.1.1,Attaque détectée et IP bloquée
+2026-02-08,01:38:20,ARP_SPOOFING,192.168.1.1,IP bloquée automatiquement
+2026-02-08,01:38:19,ARP_SPOOFING,192.168.1.7,Attaque détectée et IP bloquée
+2026-02-08,01:38:19,ARP_SPOOFING,192.168.1.7,IP bloquée automatiquement
+2026-02-08,01:38:13,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-08,01:37:47,SYSTEM,0.0.0.0,Système IDPS initialisé
+2026-02-08,01:37:47,ML_MODEL,0.0.0.0,Modèle entraîné - Accuracy: 99.60%

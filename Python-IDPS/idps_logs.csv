@@ -1,0 +1,14 @@
+Date,Heure,Type Attaque,IP Source,Details
+2026-02-07,20:52:36,SYSTEM,0.0.0.0,Surveillance réseau arrêtée
+2026-02-07,20:50:37,UDP_FLOOD,192.168.1.7,Attaque détectée et IP bloquée
+2026-02-07,20:50:37,UDP_FLOOD,192.168.1.7,IP bloquée automatiquement
+2026-02-07,20:50:33,UNBLOCK,192.168.1.7,IP débloquée manuellement (était bloquée pour ARP_SPOOFING)
+2026-02-07,20:50:10,UDP_FLOOD,192.168.1.9,Attaque détectée et IP bloquée
+2026-02-07,20:50:10,UDP_FLOOD,192.168.1.9,IP bloquée automatiquement
+2026-02-07,20:49:52,ARP_SPOOFING,192.168.1.1,Attaque détectée et IP bloquée
+2026-02-07,20:49:52,ARP_SPOOFING,192.168.1.1,IP bloquée automatiquement
+2026-02-07,20:49:51,ARP_SPOOFING,192.168.1.7,Attaque détectée et IP bloquée
+2026-02-07,20:49:51,ARP_SPOOFING,192.168.1.7,IP bloquée automatiquement
+2026-02-07,20:49:51,SYSTEM,0.0.0.0,Surveillance réseau démarrée
+2026-02-07,20:49:06,SYSTEM,0.0.0.0,Système IDPS initialisé
+2026-02-07,20:49:06,ML_MODEL,0.0.0.0,Modèle entraîné avec précision: 99.90%
